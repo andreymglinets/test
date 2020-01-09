@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+html, body {
+    height: 100%;
+}
+
+body {
+    color: #4f4f5a;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+#slider-wrap { 
+    width: 33%;
+    height: 500px;
+    margin-top: 128px;
+    margin-left: 13.2%;
+    margin-bottom: 70px;
+}
+
+.img-scr{
+    background-color: #e2e3e5;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);;
+    z-index: 1;
+}
+
+#slider {
+    position: relative;
+    height: 422px;
+    overflow: hidden;
+
+}
+
+.slide {
+    width:392px;
+    height: 100%; 
+    position: absolute;
+    top: 0;
+    left: 8.3%;
+    right: auto;
+}
+
+
+
+.Radio-But {
+    margin-top:35px;
+    text-align:center;
+    border-radius: 50%;
+}
+
+.Radio-But .ctrl-select {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: url("../img/radioBg.png") center bottom no-repeat;
+    margin: 2px;
+    overflow: hidden;
+    text-indent: -99999px;
+    border-radius: 50%;
+}
+
+.Radio-But .ctrl-select:hover {
+    cursor: pointer;
+    background-position: center center;
+    border-radius: 50%;
+}
+
+.Radio-But .ctrl-select.active{
+    background-position: center top;
+}
+
+#prewBut, #nextBut{
+    display: block;
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    text-indent: -99999px;
+    /* background: url("../img/arrowBg.png") left center no-repeat; */
+    opacity: 0;
+    z-index: 3;
+    outline: none !important;
+}
+
+#prewBut { 
+    left: 10px;
+    background-color: #eeeff1;
+    height: 362px;
+    top: 30px;
+    z-index: 0;
+}
+
+#nextBut {
+    right: -2px;
+    /* background: url(../img/arrowBg.png) right center no-repeat; */
+    background-color: #eeeff1;
+    height: 362px;
+    top: 30px;
+    z-index: 0;
+}
+
+#prewBut:hover, #nextBut:hover {
+    opacity: 1;
+}
+
+#main-featured{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+#featured-img {
+    width: 79.3%;
+    margin: 102px auto 21px auto;
+    height: 730px;
+}
+
+.our-work{
+display: inline-block;
+}
+.img-six{
+    width: 325px;
+    height: 315px;
+
+}
+
+#list :not(:nth-child(3n+1)){
+    margin-left: 9px;
+    margin-bottom: 7px;
+}
+
+#main-our-service{
+    background-color: #f9fbfb;
+}
+
+#blocks{
+    width: 73%;
+    height: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
